@@ -1,0 +1,37 @@
+<html ng-app="myApp">
+<head>
+<title>Multiplication Operations</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstNumber;
+    $scope.secondNumber;
+    $scope.result;
+    $scope.multiply = function() {
+        $scope.result = $scope.firstNumber * $scope.secondNumber;
+
+    }
+});
+
+</script>
+</head>
+<body>
+    <div ng-controller="myCtrl">
+        <h1>Multiplication Operations</h1>
+        <h3>https://www.youtube.com/c/SauravHathi</h3>
+        <br>
+        <h2>Cost Calculator</h2>
+        <form>
+            <label>Quantity:</label>
+            <input type="text" ng-model="firstNumber" />
+            <label>Price:</label>
+            <input type="text" ng-model="secondNumber" />
+            <input type="button" value="Multiply" ng-click="multiply()" />
+            <br>
+            <br>
+            <b>Total in dollar: {{result}}</b>
+        </form>
+    </div>
+</body>
+</html>
