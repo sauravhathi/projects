@@ -1,0 +1,34 @@
+{
+   "background": {
+      "service_worker": "worker.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "main/inject.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "homepage_url": "https://github.com/sauravhathi",
+   "icons": {
+      "128": "main/icons/128.png",
+      "16": "main/icons/16.png",
+      "19": "main/icons/19.png",
+      "256": "main/icons/256.png",
+      "32": "main/icons/32.png",
+      "38": "main/icons/38.png",
+      "48": "main/icons/48.png",
+      "512": "main/icons/512.png",
+      "64": "main/icons/64.png"
+   },
+   "manifest_version": 2,
+   "name": "Disable Suspicious Activity",
+   "options_ui": {
+      "page": "main/options/index.html"
+   },
+   "permissions": [ "storage" ],
+   "update_url": "https://github.com/sauravhathi",
+   "version": "0.0.1"
+}

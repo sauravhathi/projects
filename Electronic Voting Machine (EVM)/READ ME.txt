@@ -1,0 +1,24 @@
+READ ME
+
+This is a very good program, it works as Electronic Voter Machine(EVM). It allows voter
+to vote for any group. 
+
+Before running the program make sure your IDLE should have all this modules:
+
+1. mysql.connector
+2. also make sure your MySQL is already installed in your system
+3. Python Interpreter with version 3.6.x. 
+4. Before running the program you need to edit the database and store your voter id in 
+the database. And also replace the password of your MySQL database in the script.
+
+It accepts candidates name, group name and their symbol for voting purpose. It accepts maximum 
+10 candidates name. If you want you can increase by editing the script. Each user can vote only 
+once using their voter id otherwise it generates an error message in the window. It also provide a
+feature to store the voting result in text file of your directory. at the end it displays the 
+result of the election with the number of votes of each candidate. As I have allowed 3 voters can 
+vote at a time, so please edit the script as per your convience.
+
+It will be highly appreciable if you use the program with the refference of my website.
+
+THANK YOU...
+ 
